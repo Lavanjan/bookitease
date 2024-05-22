@@ -37,11 +37,11 @@ const Content = ({
             iconClass="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-primary-900 text-gray-50 mr-4 mt-1 p-1"
           />
         </div>
-        <div aria-hidden="true" className="mt-20 md:mt-0 md:basis-1/2 self-center justify-center items-center">
+        <div aria-hidden="true" className="mt-20 md:mt-0 md:basis-1/2">
           {image && (
-            <div className="relative m-auto max-w-5xl">
+            <div className="relative m-auto max-w-4xl">
               <Image
-                className="mx-auto w-full rounded-lg "
+                className="mx-auto w-full rounded-lg  dark:bg-slate-700"
                 src={image.src}
                 width={828}
                 height={828}

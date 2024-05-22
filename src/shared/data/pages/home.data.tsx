@@ -26,25 +26,36 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import hotelbookingservice from '~/assets/images/HotelBooking---4x--shadowlite.png';
-import restaurantImg from '~/assets/images/Restaurant Service--4x.png';
-import housekeepingImg from '~/assets/images/Housekeeping Service---4x.png';
-import inventoryImg from '~/assets/images/Inventory Service--4x.png';
-import analyticreportImg from '~/assets/images/Analytics and Reports ----4x.png';
+import heroImg from '~/assets/images/hero.jpg';
+import nextJsLogo from '~/assets/images/nextjs-logo.png';
+import reactLogo from '~/assets/images/react-logo.png';
+import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
+import typescriptLogo from '~/assets/images/typescript-logo.png';
+import hotelbookingservice from '../../../assets/images/hotelbookingservice 2.png';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
-import frontbackgroundimage from '~/assets/images/backgroundFront.png';
+import gasImg from '~/assets/images/gas.jpg';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
-  image: {
-    src: frontbackgroundimage,
-    alt: 'Colorful Image',
-  },
-  title: <>Effortlessly Elevate Your Business with Comprehensive Hotel Management Software.</>,
+  title: (
+    <>
+      Effortlessly Elevate Your Business with Comprehensive Hotel Management Software.
+      {/* Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
+      <span className="sm:whitespace-nowrap">Tailwind CSS</span> */}
+    </>
+  ),
   subtitle: (
     <>
       Effortlessly enhance your hotel operations with our all-in-one management software. Streamline bookings, payments,
       and guest services with a single solution. Transform your hotel into a seamless and efficient operation.
+      {/* <span className="hidden md:inline">
+        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
+          HMS
+        </span>{' '}
+        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
+      </span>{' '}
+      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
+      optimization. */}
     </>
   ),
   callToAction: {
@@ -55,8 +66,13 @@ export const heroHome: HeroProps = {
   },
   callToAction2: {
     text: 'Schedule a Demo',
-    href: '/',
+    href: 'https://calendly.com/ravilavanjan23',
+    targetBlank: true,
   },
+  // image: {
+  //   src: heroImg,
+  //   alt: 'Hero HMS',
+  // },
 };
 
 // // SocialProof data on Home page *******************
@@ -259,7 +275,7 @@ export const contentHomeTwo: ContentProps = {
     },
   ],
   image: {
-    src: restaurantImg,
+    src: cameraBackImg,
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -303,7 +319,7 @@ export const contentHomeThree: ContentProps = {
     },
   ],
   image: {
-    src: housekeepingImg,
+    src: cameraBackImg,
     alt: 'Colorful Image',
   },
   isReversed: false,
@@ -336,7 +352,7 @@ export const contentHomeFour: ContentProps = {
     },
   ],
   image: {
-    src: inventoryImg,
+    src: cameraBackImg,
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -379,7 +395,7 @@ export const contentHomeFive: ContentProps = {
     },
   ],
   image: {
-    src: analyticreportImg,
+    src: cameraBackImg,
     alt: 'Colorful Image',
   },
   isReversed: false,
@@ -538,33 +554,34 @@ export const faqs2Home: FAQsProps = {
   hasBackground: false,
   header: {
     title: 'Frequently Asked Questions',
-    subtitle: 'Users quickly find the information they need about the app’s features, usage, and troubleshooting.',
+    subtitle:
+      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
     tagline: 'FAQS',
   },
   items: [
     {
-      title: 'What do I need to start?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: 'What is hotel management software?',
+      description: `Hotel management software is a cutting-edge, cloud-based solution that empowers small hoteliers to manage their property more effectively and achieve greater success. This innovative technology allows hoteliers to take their business online, modernising their operations and embracing the latest industry trends.`,
     },
     {
-      title: 'How to install the NextJS + Tailwind CSS template?',
-      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
+      title: 'What features does your hotel management software offer?',
+      description: `Our hotel management software offers a comprehensive range of features, including room reservations, guest check-in/check-out, billing and invoicing, housekeeping management, reporting and analytics, and more.`,
     },
     {
-      title: "What's something that you completely don't understand?",
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: 'Is your hotel management software easy to use?',
+      description: `Yes, our software is designed with user-friendly interfaces and intuitive features to ensure ease of use for hotel staff at all levels, from front desk agents to management.`,
     },
     {
-      title: "What's an example of when you changed your mind?",
-      description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
+      title: 'How can your software help me manage reservations and bookings?',
+      description: `Our software allows you to efficiently manage room reservations, including checking availability, processing bookings, and handling cancellations or modifications. You can also set up different room rates, packages, and discounts to attract more guests.`,
     },
     {
-      title: 'What is something that you would really like to try again?',
-      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
+      title: 'Does your software provide reporting and analytics capabilities?',
+      description: `Yes, our software includes robust reporting and analytics tools that provide valuable insights into your hotel's performance, including occupancy rates, revenue generation, guest demographics, and more. These insights can help you make informed decisions to optimize your operations and maximize profitability.`,
     },
     {
-      title: 'If you could only ask one question to each person you meet, what would that question be?',
-      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
+      title: 'Is customer support available if I encounter any issues or need assistance?',
+      description: `Yes, we offer dedicated customer support to assist you with any questions, technical issues, or training needs related to our hotel management software. Our support team is available via phone, email, or live chat to provide prompt assistance whenever you need it.`,
     },
   ],
 };
@@ -574,8 +591,8 @@ export const pricingHome: PricingProps = {
   id: 'pricing-on-home',
   hasBackground: true,
   header: {
-    title: 'Prices For Each Plan',
-    subtitle: ' Choose the best option for your needs',
+    title: 'Prices for each plan',
+    subtitle: 'Pick a plan to grow your hotel and your business with BookitEase.',
     // tagline: 'Pricing',
   },
   prices: [
@@ -585,16 +602,22 @@ export const pricingHome: PricingProps = {
       period: 'per month',
       items: [
         {
-          description: 'Etiam in libero, et volutpat',
+          description: 'Hotel Service',
         },
         {
-          description: 'Aenean ac nunc dolor tristique',
+          description: 'House Keeping Service',
         },
         {
-          description: 'Cras scelerisque accumsan lib',
+          description: 'Inventory Service',
         },
         {
-          description: 'In hac habitasse',
+          description: 'Reports & Analytics',
+        },
+        {
+          description: 'Mobile Application',
+        },
+        {
+          description: 'Additional Room Charge $10/Room',
         },
       ],
       callToAction: {
@@ -610,16 +633,25 @@ export const pricingHome: PricingProps = {
       period: 'per month',
       items: [
         {
-          description: 'Proin vel laoreet',
+          description: 'Hotel Service',
         },
         {
-          description: 'Ut efficitur egestas',
+          description: 'House Keeping Service',
         },
         {
-          description: 'Pellentesque ut nibh',
+          description: 'Inventory Service',
         },
         {
-          description: 'Donec fringilla sem',
+          description: 'Reports & Analytics',
+        },
+        {
+          description: 'Restaurant Service',
+        },
+        {
+          description: 'Mobile Application',
+        },
+        {
+          description: 'Additional Room Charge $10/Room',
         },
       ],
       callToAction: {
@@ -636,16 +668,25 @@ export const pricingHome: PricingProps = {
       period: 'per month',
       items: [
         {
-          description: 'Curabitur suscipit risus',
+          description: 'Hotel Service',
         },
         {
-          description: 'Aliquam blandit malesuada',
+          description: 'House Keeping Service',
         },
         {
-          description: 'Suspendisse sit amet',
+          description: 'Inventory Service',
         },
         {
-          description: 'Suspendisse auctor dui',
+          description: 'Reports & Analytics',
+        },
+        {
+          description: 'Restaurant Service',
+        },
+        {
+          description: 'Mobile Application',
+        },
+        {
+          description: 'Additional Room Charge $0/Room',
         },
       ],
       callToAction: {

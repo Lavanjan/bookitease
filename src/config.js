@@ -1,7 +1,7 @@
 module.exports.SITE = {
   name: 'HMS',
 
-  origin: 'https://hms.vercel.app',
+  origin: 'https://bookitease.vercel.app',
   basePathname: '/',
   trailingSlash: false,
 

@@ -231,7 +231,7 @@ export const footerData2: FooterProps = {
     },
     {
       title: 'Email',
-      texts: ['info@invictainnovations.com'],
+      texts: ['Office:info@invictainnovations.com', 'Site:http://invictainnovations.com'],
     },
   ],
   socials: [
