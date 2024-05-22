@@ -26,36 +26,25 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import heroImg from '~/assets/images/hero.jpg';
-import nextJsLogo from '~/assets/images/nextjs-logo.png';
-import reactLogo from '~/assets/images/react-logo.png';
-import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
-import typescriptLogo from '~/assets/images/typescript-logo.png';
-import hotelbookingservice from '../../../assets/images/hotelbookingservice 2.png';
+import hotelbookingservice from '~/assets/images/HotelBooking---4x--shadowlite.png';
+import restaurantImg from '~/assets/images/Restaurant Service--4x.png';
+import housekeepingImg from '~/assets/images/Housekeeping Service---4x.png';
+import inventoryImg from '~/assets/images/Inventory Service--4x.png';
+import analyticreportImg from '~/assets/images/Analytics and Reports ----4x.png';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
-import gasImg from '~/assets/images/gas.jpg';
+import frontbackgroundimage from '~/assets/images/backgroundFront.png';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
-  title: (
-    <>
-      Effortlessly Elevate Your Business with Comprehensive Hotel Management Software.
-      {/* Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span> */}
-    </>
-  ),
+  image: {
+    src: frontbackgroundimage,
+    alt: 'Colorful Image',
+  },
+  title: <>Effortlessly Elevate Your Business with Comprehensive Hotel Management Software.</>,
   subtitle: (
     <>
       Effortlessly enhance your hotel operations with our all-in-one management software. Streamline bookings, payments,
       and guest services with a single solution. Transform your hotel into a seamless and efficient operation.
-      {/* <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          HMS
-        </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
-      </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization. */}
     </>
   ),
   callToAction: {
@@ -69,10 +58,6 @@ export const heroHome: HeroProps = {
     href: 'https://calendly.com/ravilavanjan23',
     targetBlank: true,
   },
-  // image: {
-  //   src: heroImg,
-  //   alt: 'Hero HMS',
-  // },
 };
 
 // // SocialProof data on Home page *******************
@@ -275,7 +260,7 @@ export const contentHomeTwo: ContentProps = {
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: restaurantImg,
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -319,7 +304,7 @@ export const contentHomeThree: ContentProps = {
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: housekeepingImg,
     alt: 'Colorful Image',
   },
   isReversed: false,
@@ -352,7 +337,7 @@ export const contentHomeFour: ContentProps = {
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: inventoryImg,
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -395,7 +380,7 @@ export const contentHomeFive: ContentProps = {
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: analyticreportImg,
     alt: 'Colorful Image',
   },
   isReversed: false,
@@ -554,8 +539,7 @@ export const faqs2Home: FAQsProps = {
   hasBackground: false,
   header: {
     title: 'Frequently Asked Questions',
-    subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
+    subtitle: 'Users quickly find the information they need about the app’s features, usage, and troubleshooting.',
     tagline: 'FAQS',
   },
   items: [
