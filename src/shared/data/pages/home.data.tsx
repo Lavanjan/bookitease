@@ -31,6 +31,8 @@ import restaurantImg from '~/assets/images/Restaurant Service--4x.png';
 import housekeepingImg from '~/assets/images/Housekeeping Service---4x.png';
 import inventoryImg from '~/assets/images/Inventory Service--4x.png';
 import analyticreportImg from '~/assets/images/Analytics and Reports ----4x.png';
+import mobileappImg from '~/assets/images/Mobile Booking App---4x.png';
+
 import cameraBackImg from '~/assets/images/camera-back.jpg';
 import frontbackgroundimage from '~/assets/images/backgroundFront.png';
 
@@ -416,7 +418,7 @@ export const contentHomeSix: ContentProps = {
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: mobileappImg,
     alt: 'Colorful Image',
   },
   isReversed: true,
