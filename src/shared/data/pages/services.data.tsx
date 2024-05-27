@@ -17,10 +17,6 @@ import {
   TestimonialsProps,
 } from '~/shared/types';
 
-import heroImg from '~/assets/images/hero.jpg';
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
-import cameraBackImg from '~/assets/images/camera-back.jpg';
-
 // Hero data on Services page *******************
 export const heroServices: HeroProps = {
   title: 'Elevate your projects with our stunning templates',
@@ -32,7 +28,7 @@ export const heroServices: HeroProps = {
     targetBlank: true,
   },
   image: {
-    src: heroImg,
+    src: '',
     alt: 'Hero TailNext',
   },
 };
@@ -102,7 +98,7 @@ export const contentServicesOne: ContentProps = {
     },
   ],
   image: {
-    src: cameraFrontImg,
+    src: '',
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -136,7 +132,7 @@ export const contentServicesTwo: ContentProps = {
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: '',
     alt: 'Colorful Image',
   },
   isReversed: false,
