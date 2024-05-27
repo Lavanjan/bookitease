@@ -8,7 +8,6 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '~/shared/types';
-import hero2Img from '~/assets/images/hero2.jpg';
 import {
   IconAdjustments,
   IconAward,
@@ -52,7 +51,7 @@ export const hero2About: HeroProps = {
     href: '/contact',
   },
   image: {
-    src: hero2Img,
+    src: '',
     alt: 'BookItEase',
   },
 };
