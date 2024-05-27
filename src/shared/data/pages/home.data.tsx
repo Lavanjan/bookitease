@@ -42,7 +42,7 @@ export const heroHome: HeroProps = {
     src: frontbackgroundimage,
     alt: 'Colorful Image',
   },
-  mainTitle: <>Cloud based Hotel Management System | BookitEase</>,
+  mainTitle: <>Cloud based Hotel Management System | BookItEase</>,
   title: <>Automate processes. Delight customers.</>,
   subtitle: (
     <>Enhance hotel operations with Bookit Ease, the all-in-one software for bookings, payments, and guest services.</>
@@ -576,7 +576,7 @@ export const pricingHome: PricingProps = {
   hasBackground: true,
   header: {
     title: 'Prices for each plan',
-    subtitle: 'Pick a plan to grow your hotel and your business with BookitEase.',
+    subtitle: 'Pick a plan to grow your hotel and your business with BookItEase.',
     // tagline: 'Pricing',
   },
   prices: [
