@@ -1,34 +1,20 @@
-import Image from 'next/image';
 import { HeroProps } from '~/shared/types';
 import CTA from '../common/CTA';
-import { useState } from 'react';
-import { InlineWidget } from 'react-calendly';
-import backgroundimg from '../../assets/images/backgroundFront.png';
 
-const Hero = ({ title, subtitle, callToAction, callToAction2, image }: HeroProps) => {
+const Hero = ({ title, subtitle, mainTitle, callToAction, callToAction2 }: HeroProps) => {
   return (
     <section id="heroOne">
-      <div className="mx-auto max-w-8xl h-screen   bg-[url('../../assets/images/backgroundFront.png')] bg-cover bg-black bg-opacity-90 ">
-        <div className="w-full bg-black h-screen bg-opacity-70 ">
-          {/* {image && (
-          <div className="relative m-auto max-w-8xl">
-            <Image
-              className="mx-auto h-auto w-full rounded-md bg-gray-400 dark:bg-slate-700"
-              src={image.src}
-              alt={image.alt}
-              width={1024}
-              height={607}
-              sizes="(max-width: 64rem) 100vw, 1024px"
-              loading="eager"
-              placeholder="blur"
-              priority
-            />
-          </div>
-        )} */}
-          <div className="  pt-12  md:pt-20   ">
-            <div className="mx-auto max-w-4xl align-middle  justify-center text-center ">
+      <div className="mx-auto max-w-8xl h-screen bg-[url('../../assets/images/backgroundFront.png')] bg-cover bg-center bg-black bg-opacity-90">
+        <div className="w-full bg-black h-screen bg-opacity-70 flex md:justify-center md:items-center md:pt-0 lg:pt-0 pt-20">
+          <div>
+            <div className="mx-auto max-w-4xl align-middle px-6 justify-center text-center ">
+              {mainTitle && (
+                <p className="leading-tighter  mb-6 text-sm text-white tracking-tighter md:text-base lg:text-base">
+                  {mainTitle}
+                </p>
+              )}
               {title && (
-                <h1 className="leading-tighter font-heading mb-6 text-xl text-white font-bold tracking-tighter md:text-5xl lg:text-5xl">
+                <h1 className="leading-tighter font-heading mb-6 text-4xl text-white font-bold tracking-tighter md:text-5xl lg:text-5xl">
                   {title}
                 </h1>
               )}
@@ -41,22 +27,6 @@ const Hero = ({ title, subtitle, callToAction, callToAction2, image }: HeroProps
               </div>
             </div>
           </div>
-
-          {/* {image && (
-            <div className="relative m-auto max-w-5xl">
-              <Image
-                className="mx-auto h-auto w-full rounded-md bg-gray-400 dark:bg-slate-700"
-                src={image.src}
-                alt={image.alt}
-                width={1024}
-                height={607}
-                sizes="(max-width: 64rem) 100vw, 1024px"
-                loading="eager"
-                placeholder="blur"
-                priority
-              />
-            </div>
-          )} */}
         </div>
       </div>
     </section>

@@ -13,9 +13,8 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <>
-      <Hero {...heroPricing} />
       <Pricing {...pricingPricing} />
-      <Comparison {...comparisonPricing} />
+      {/* <Comparison {...comparisonPricing} /> */}
       <FAQs3 {...faqs3Pricing} />
     </>
   );

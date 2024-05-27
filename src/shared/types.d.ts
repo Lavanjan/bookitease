@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image';
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 
 type Widget = {
   id?: string;
@@ -45,6 +45,7 @@ type LinkOrButton = {
   containerClass?: string;
   linkClass?: string;
   iconClass?: string;
+  onClick?: () => void;
 };
 
 type Button = {
@@ -114,6 +115,7 @@ type Item = {
   form?: SmallForm;
   icon?: Icon;
   callToAction?: CallToActionType;
+  access?: boolean;
 };
 
 type ItemGrid = {
@@ -128,6 +130,7 @@ type ItemGrid = {
   titleClass?: string;
   descriptionClass?: string;
   actionClass?: string;
+  conditionApply?: boolean;
 };
 
 type Timeline = {
@@ -240,6 +243,7 @@ type HeroProps = {
   callToAction?: CallToActionType;
   callToAction2?: CallToActionType;
   image?: Image;
+  mainTitle?: string | ReactElement;
 };
 
 type FAQsProps = Widget & {
@@ -358,4 +362,10 @@ type HeaderProps = {
   showToggleTheme?: boolean;
   showRssFeed?: boolean;
   position?: 'center' | 'right' | 'left';
+};
+
+type ModalProps = {
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
 };

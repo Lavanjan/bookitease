@@ -42,18 +42,16 @@ export const heroHome: HeroProps = {
     src: frontbackgroundimage,
     alt: 'Colorful Image',
   },
-  title: <>Effortlessly Elevate Your Business with Comprehensive Hotel Management Software.</>,
+  mainTitle: <>Cloud based Hotel Management System | BookitEase</>,
+  title: <>Automate processes. Delight customers.</>,
   subtitle: (
-    <>
-      Effortlessly enhance your hotel operations with our all-in-one management software. Streamline bookings, payments,
-      and guest services with a single solution. Transform your hotel into a seamless and efficient operation.
-    </>
+    <>Enhance hotel operations with Bookit Ease, the all-in-one software for bookings, payments, and guest services.</>
   ),
   callToAction: {
     text: 'Start Free Trial',
-    href: 'https://github.com/onwidget/hms',
+    href: '/pricing',
     icon: IconDownload,
-    targetBlank: true,
+    targetBlank: false,
   },
   callToAction2: {
     text: 'Schedule a Demo',

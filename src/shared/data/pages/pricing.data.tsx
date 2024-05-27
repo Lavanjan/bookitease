@@ -25,7 +25,7 @@ export const pricingPricing: PricingProps = {
     subtitle: (
       <>
         Discover our flexible pricing options designed to fit your needs perfectly.{' '}
-        <span className="hidden md:inline">{`No matter the size of your project, we have the right plan for you.`}</span>
+        <span className="hidden md:inline">{`No matter the size of your hotel, we have the right plan for you.`}</span>
       </>
     ),
   },
@@ -37,22 +37,38 @@ export const pricingPricing: PricingProps = {
       period: 'per month',
       items: [
         {
-          description: 'Access to a selection of professionally designed website templates.',
+          description: 'Hotel Service Application.',
+          access: true,
         },
         {
-          description: 'Email support to assist you with any questions or issues.',
+          description: 'House Keeping Service Application.',
+          access: true,
         },
         {
-          description: 'Adequate storage space for small to medium-sized websites.',
+          description: 'Inventory Service Application.',
+          access: true,
         },
         {
-          description: 'Core features for a functional online presence, such as SEO tools and contact forms.',
+          description: 'Restaurant Service Application.',
+          access: false,
+        },
+        {
+          description: 'Reports & Analytics.',
+          access: true,
+        },
+        {
+          description: 'Mobile Application.',
+          access: true,
+        },
+        {
+          description: 'Additional Room Charge $2/room.',
+          access: true,
         },
       ],
       callToAction: {
-        targetBlank: true,
-        text: 'Free 7-day trial',
-        href: '/',
+        targetBlank: false,
+        text: 'Free 30-day trial',
+        href: '',
       },
       hasRibbon: false,
     },
@@ -63,21 +79,37 @@ export const pricingPricing: PricingProps = {
       period: 'per month',
       items: [
         {
-          description: 'A larger variety of premium website templates to choose from.',
+          description: 'Hotel Service Application.',
+          access: true,
         },
         {
-          description: 'Faster response times and priority customer support.',
+          description: 'House Keeping Service Application.',
+          access: true,
         },
         {
-          description: 'More storage space to accommodate growing websites and content.',
+          description: 'Inventory Service Application.',
+          access: true,
         },
         {
-          description: 'Enable e-commerce capabilities to sell products or services online.',
+          description: 'Restaurant Service Application.',
+          access: true,
+        },
+        {
+          description: 'Reports & Analytics.',
+          access: true,
+        },
+        {
+          description: 'Mobile Application.',
+          access: true,
+        },
+        {
+          description: 'Additional Room Charge $2/room.',
+          access: true,
         },
       ],
       callToAction: {
         targetBlank: true,
-        text: 'Free 15-day trial',
+        text: 'Free 30-day trial',
         href: '/',
       },
       hasRibbon: true,
@@ -90,16 +122,32 @@ export const pricingPricing: PricingProps = {
       period: 'per month',
       items: [
         {
-          description: 'Access to exclusive and customizable premium website templates.',
+          description: 'Hotel Service Application.',
+          access: true,
         },
         {
-          description: 'Round-the-clock customer support for immediate assistance.',
+          description: 'House Keeping Service Application.',
+          access: true,
         },
         {
-          description: 'No limits on storage, ideal for extensive websites and media.',
+          description: 'Inventory Service Application.',
+          access: true,
         },
         {
-          description: 'Advanced SEO, analytics, and marketing tools for optimal performance and growth.',
+          description: 'Restaurant Service Application.',
+          access: true,
+        },
+        {
+          description: 'Reports & Analytics.',
+          access: true,
+        },
+        {
+          description: 'Mobile Application.',
+          access: true,
+        },
+        {
+          description: 'Unlimited Rooms.',
+          access: true,
         },
       ],
       callToAction: {
@@ -119,7 +167,7 @@ export const comparisonPricing: ComparisonProps = {
   header: {
     title: "What's available for each plan?",
     subtitle:
-      'Morbi ut imperdiet ex. Nullam sed tincidunt purus. Donec finibus dui at odio dictum facilisis. Maecenas ut orci quis nisi congue maximus. Sed quis augue sapien.',
+      'Discover our flexible pricing options designed to fit your needs perfectly. No matter the size of your hotel, we have the right plan for you.',
     // tagline: 'Comparison',
   },
   columns: [
@@ -127,45 +175,51 @@ export const comparisonPricing: ComparisonProps = {
       title: 'compare plans',
       items: [
         {
-          title: 'In vitae finibus',
+          title: 'Hotel Service',
         },
         {
-          title: 'Cras sollicitudin',
+          title: 'House Keeping Service',
         },
         {
-          title: 'Suspendisse',
+          title: 'Inventory Service',
         },
         {
-          title: 'Vestibulum ornare',
+          title: 'Reports & Analytics',
         },
         {
-          title: 'In hendrerit',
+          title: 'Restaurant Service',
         },
         {
-          title: 'Ut pharetra',
+          title: 'Mobile Application',
+        },
+        {
+          title: 'Number of Rooms',
         },
       ],
     },
     {
-      title: 'basic',
+      title: 'trial',
       items: [
         {
-          title: 'Free 7-day trial',
+          title: true,
         },
         {
-          title: 'Limited',
+          title: true,
         },
         {
-          title: '$29',
+          title: true,
         },
         {
-          title: false,
+          title: true,
         },
         {
           title: false,
         },
         {
           title: true,
+        },
+        {
+          title: 'Limited',
         },
       ],
       callToAction: {
@@ -177,13 +231,13 @@ export const comparisonPricing: ComparisonProps = {
       title: 'standard',
       items: [
         {
-          title: 'Free 15-day trial',
+          title: true,
         },
         {
-          title: 'Unlimited',
+          title: true,
         },
         {
-          title: '$69',
+          title: true,
         },
         {
           title: false,
@@ -193,6 +247,9 @@ export const comparisonPricing: ComparisonProps = {
         },
         {
           title: true,
+        },
+        {
+          title: 'Limited',
         },
       ],
       callToAction: {
@@ -204,22 +261,25 @@ export const comparisonPricing: ComparisonProps = {
       title: 'premium',
       items: [
         {
-          title: 'Free 30-day trial',
+          title: true,
+        },
+        {
+          title: true,
+        },
+        {
+          title: true,
+        },
+        {
+          title: true,
+        },
+        {
+          title: true,
+        },
+        {
+          title: true,
         },
         {
           title: 'Unlimited',
-        },
-        {
-          title: '$199',
-        },
-        {
-          title: true,
-        },
-        {
-          title: true,
-        },
-        {
-          title: true,
         },
       ],
       callToAction: {

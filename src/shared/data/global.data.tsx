@@ -28,10 +28,10 @@ export const headerData: HeaderProps = {
       label: 'Pricing',
       href: '/pricing',
     },
-    {
-      label: 'About us',
-      href: '/about',
-    },
+    // {
+    //   label: 'About us',
+    //   href: '/about',
+    // },
     // {
     //   label: 'Pages',
     //   icon: IconChevronDown,
@@ -53,7 +53,7 @@ export const headerData: HeaderProps = {
 
     {
       label: 'Contact',
-      href: '/contact',
+      href: '/',
     },
   ],
   // actions: [

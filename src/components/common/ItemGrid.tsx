@@ -14,6 +14,7 @@ const ItemGrid = ({
   titleClass,
   descriptionClass,
   actionClass,
+  conditionApply,
 }: ItemGridType) => {
   return (
     <>
@@ -24,22 +25,28 @@ const ItemGrid = ({
               (columns || defaultColumns) === 4
                 ? 'lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2'
                 : (columns || defaultColumns) === 3
-                ? 'lg:grid-cols-3 sm:grid-cols-2'
-                : (columns || defaultColumns) === 2
-                ? 'sm:grid-cols-2'
-                : 'max-w-4xl'
+                  ? 'lg:grid-cols-3 sm:grid-cols-2'
+                  : (columns || defaultColumns) === 2
+                    ? 'sm:grid-cols-2'
+                    : 'max-w-4xl'
             }`,
             containerClass,
           )}
         >
-          {items.map(({ title, description, icon: Icon, callToAction }, index) => (
+          {items.map(({ title, description, icon: Icon, callToAction, access }, index) => (
             <div key={id ? `item-${id}-${index}` : `item-grid-${index}`}>
               <div className={(twMerge('flex flex-row max-w-md'), panelClass)}>
                 <div className="flex justify-center">
                   {Icon ? (
                     <Icon className={twMerge('w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2', iconClass)} />
                   ) : DefaultIcon ? (
-                    <DefaultIcon className={twMerge('w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2', iconClass)} />
+                    <DefaultIcon
+                      className={twMerge(
+                        'w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2',
+                        iconClass,
+                        conditionApply && !access ? 'border-red-600 bg-red-600' : 'border-primary-600 bg-primary-600',
+                      )}
+                    />
                   ) : null}
                 </div>
                 <div className="mt-0.5">
