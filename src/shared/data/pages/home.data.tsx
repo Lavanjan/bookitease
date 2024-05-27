@@ -587,21 +587,32 @@ export const pricingHome: PricingProps = {
       items: [
         {
           description: 'Hotel Service',
+          access: true,
         },
         {
           description: 'House Keeping Service',
+          access: true,
         },
+
         {
           description: 'Inventory Service',
+          access: true,
         },
         {
           description: 'Reports & Analytics',
+          access: true,
+        },
+        {
+          description: 'Restaurant Service',
+          access: false,
         },
         {
           description: 'Mobile Application',
+          access: true,
         },
         {
           description: 'Additional Room Charge $10/Room',
+          access: true,
         },
       ],
       callToAction: {
@@ -618,24 +629,31 @@ export const pricingHome: PricingProps = {
       items: [
         {
           description: 'Hotel Service',
+          access: true,
         },
         {
           description: 'House Keeping Service',
+          access: true,
         },
         {
           description: 'Inventory Service',
+          access: true,
         },
         {
           description: 'Reports & Analytics',
+          access: true,
         },
         {
           description: 'Restaurant Service',
+          access: true,
         },
         {
           description: 'Mobile Application',
+          access: true,
         },
         {
           description: 'Additional Room Charge $10/Room',
+          access: true,
         },
       ],
       callToAction: {
@@ -653,24 +671,31 @@ export const pricingHome: PricingProps = {
       items: [
         {
           description: 'Hotel Service',
+          access: true,
         },
         {
           description: 'House Keeping Service',
+          access: true,
         },
         {
           description: 'Inventory Service',
+          access: true,
         },
         {
           description: 'Reports & Analytics',
+          access: true,
         },
         {
           description: 'Restaurant Service',
+          access: true,
         },
         {
           description: 'Mobile Application',
+          access: true,
         },
         {
           description: 'Additional Room Charge $0/Room',
+          access: true,
         },
       ],
       callToAction: {
