@@ -833,11 +833,11 @@ export const contactHome: ContactProps = {
   content:
     "We value your input and are committed to providing the best support possible. Don't hesitate to get in touch with us through any of these channels!",
   items: [
-    {
-      title: 'Our Address',
-      description: ['72 Palali Rd, Jaffna,', 'Sri Lanka'],
-      icon: IconMapPin,
-    },
+    // {
+    //   title: 'Our Address',
+    //   description: ['72 Palali Rd, Jaffna,', 'Sri Lanka'],
+    //   icon: IconMapPin,
+    // },
     {
       title: 'Contact',
       description: ['Mobile: +94 21 221 4205', 'Mail: info@invictainnovations.com'],

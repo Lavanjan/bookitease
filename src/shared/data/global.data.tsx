@@ -221,10 +221,10 @@ export const footerData2: FooterProps = {
     },
   ],
   columns: [
-    {
-      title: 'Address',
-      texts: ['No.72, Palali Rd,', ' Jaffna.'],
-    },
+    // {
+    //   title: 'Address',
+    //   texts: ['No.72, Palali Rd,', ' Jaffna.'],
+    // },
     {
       title: 'Phone',
       texts: ['Office: +94 21 221 4205'],
@@ -239,7 +239,7 @@ export const footerData2: FooterProps = {
     { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
     { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
     { label: 'RSS', icon: IconRss, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/hms' },
+    // { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/hms' },
   ],
   footNote: (
     <div className=" text-sm">
