@@ -26,14 +26,12 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import hotelbookingservice from '~/assets/images/HotelBooking---4x--shadowlite.png';
-import restaurantImg from '~/assets/images/Restaurant Service--4x.png';
-import housekeepingImg from '~/assets/images/Housekeeping Service---4x.png';
-import inventoryImg from '~/assets/images/Inventory Service--4x.png';
-import analyticreportImg from '~/assets/images/Analytics and Reports ----4x.png';
-import mobileappImg from '~/assets/images/Mobile Booking App---4x.png';
-
-import cameraBackImg from '~/assets/images/camera-back.jpg';
+import hotelbookingservice from '~/assets/images/hotel_booking_service.png';
+import restaurantImg from '~/assets/images/restaurant_service.png';
+import housekeepingImg from '~/assets/images/housekeeping_service.png';
+import inventoryImg from '~/assets/images/inventory_service.png';
+import analyticreportImg from '~/assets/images/analytics_and_reports.png';
+import mobileappImg from '~/assets/images/mobile_booking_app.png';
 import frontbackgroundimage from '~/assets/images/backgroundFront.png';
 
 // Hero data on Home page *******************
@@ -111,7 +109,7 @@ export const featuresHome: FeaturesProps = {
       icon: IconBrandTailwind,
       callToAction: {
         text: 'Discover More',
-        href: '/',
+        href: `/#contentOne-on-home-one`,
       },
     },
     {
@@ -121,7 +119,7 @@ export const featuresHome: FeaturesProps = {
       icon: IconComponents,
       callToAction: {
         text: 'Discover More',
-        href: '/',
+        href: '/#contentOne-on-home-two',
       },
     },
     {
@@ -131,7 +129,7 @@ export const featuresHome: FeaturesProps = {
       icon: IconListCheck,
       callToAction: {
         text: 'Discover More',
-        href: '/',
+        href: '/#contentOne-on-home-three',
       },
     },
     {
@@ -141,7 +139,7 @@ export const featuresHome: FeaturesProps = {
       icon: IconRocket,
       callToAction: {
         text: 'Discover More',
-        href: '/',
+        href: '/#contentOne-on-home-four',
       },
     },
     {
@@ -151,7 +149,7 @@ export const featuresHome: FeaturesProps = {
       icon: IconArrowsRightLeft,
       callToAction: {
         text: 'Discover More',
-        href: '/',
+        href: '/#contentOne-on-home-five',
       },
     },
     {
@@ -161,7 +159,7 @@ export const featuresHome: FeaturesProps = {
       icon: IconBulb,
       callToAction: {
         text: 'Discover More',
-        href: '/',
+        href: '/#contentOne-on-home-six',
       },
     },
   ],
