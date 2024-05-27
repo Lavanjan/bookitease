@@ -6,5 +6,5 @@ module.exports.SITE = {
   trailingSlash: false,
 
   title: 'BookItEase',
-  description: 'BookItEase is a free and ready to start template to make your website using Next.js and Tailwind CSS.',
+  description: 'BookItEase',
 };
