@@ -6,7 +6,7 @@ addons.setConfig({
     base: 'light',
 
     // Logo
-    brandTitle: 'HMS',
+    brandTitle: 'BookItEase',
     // brandUrl: 'https://github.com/onwidget/tailnext',
     brandTarget: '_blank',
   }),

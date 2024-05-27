@@ -71,7 +71,7 @@ export const headerData: HeaderProps = {
 
 // Footer data
 export const footerData: FooterProps = {
-  title: 'HMS',
+  title: 'BookItEase',
   links: [
     {
       label: 'Terms & Conditions',
