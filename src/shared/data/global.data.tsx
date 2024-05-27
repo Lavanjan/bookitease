@@ -53,7 +53,7 @@ export const headerData: HeaderProps = {
 
     {
       label: 'Contact',
-      href: '/',
+      href: '/contact',
     },
   ],
   // actions: [
