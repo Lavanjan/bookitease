@@ -40,8 +40,9 @@ export const heroHome: HeroProps = {
     src: frontbackgroundimage,
     alt: 'Colorful Image',
   },
-  mainTitle: <>Cloud based Hotel Management System | BookItEase</>,
-  title: <>Automate processes. Delight customers.</>,
+  mainTitle: <>Empowering properties for a better future.</>,
+  appName: <>BookItEase</>,
+  title: <>Hotel Management Software</>,
   subtitle: (
     <>Enhance hotel operations with Bookit Ease, the all-in-one software for bookings, payments, and guest services.</>
   ),
