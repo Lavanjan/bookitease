@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@tabler/icons-react": "^2.46.0",
+    "flowbite-react": "^0.9.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.0.0",
     "next": "^14.2.3",
@@ -23,6 +24,9 @@
     "react": "^18.2.0",
     "react-calendly": "^4.3.0",
     "react-dom": "^18.2.0",
+    "react-easy-swipe": "^0.0.23",
+    "react-responsive": "^10.0.0",
+    "react-responsive-carousel": "^3.2.23",
     "sharp": "^0.33.2",
     "tailwind-merge": "^2.2.0"
   },

@@ -237,6 +237,7 @@ type WindowSize = {
 
 // WIDGETS
 type HeroProps = {
+  appName?: string | ReactElement,
   title?: string | ReactElement;
   subtitle?: string | ReactElement;
   tagline?: string;
