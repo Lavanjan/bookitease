@@ -15,7 +15,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.4.2",
     "@tabler/icons-react": "^2.46.0",
+    "axios": "^1.7.2",
+    "crypto-js": "^4.2.0",
     "flowbite-react": "^0.9.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.0.0",
@@ -25,10 +28,12 @@
     "react-calendly": "^4.3.0",
     "react-dom": "^18.2.0",
     "react-easy-swipe": "^0.0.23",
+    "react-hook-form": "^7.51.5",
     "react-responsive": "^10.0.0",
     "react-responsive-carousel": "^3.2.23",
     "sharp": "^0.33.2",
-    "tailwind-merge": "^2.2.0"
+    "tailwind-merge": "^2.2.0",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^7.6.10",
@@ -43,6 +48,7 @@
     "@storybook/react": "^7.6.10",
     "@storybook/test": "^7.6.10",
     "@tailwindcss/typography": "^0.5.10",
+    "@types/crypto-js": "^4.2.2",
     "@types/markdown-it": "^13.0.7",
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
