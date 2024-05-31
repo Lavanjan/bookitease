@@ -237,7 +237,7 @@ type WindowSize = {
 
 // WIDGETS
 type HeroProps = {
-  appName?: string | ReactElement,
+  appName?: string | ReactElement;
   title?: string | ReactElement;
   subtitle?: string | ReactElement;
   tagline?: string;
@@ -369,4 +369,28 @@ type ModalProps = {
   isOpen: boolean;
   onClose: () => void;
   children: React.ReactNode;
+};
+
+type IUserRegistration = {
+  name: string;
+  title: string;
+  address: string;
+  contactNumber: string;
+  email: string;
+  type?: string;
+  userContactNumber: string;
+  propertyId?: string;
+  userEmail: string;
+  country: string;
+  userFirstName: string;
+  userLastName: string;
+  licenseId: number;
+  subscriptionPlan: number;
+  hotelLogo: any;
+};
+
+type IApiResponse = {
+  success: boolean;
+  message: string;
+  data?: any;
 };

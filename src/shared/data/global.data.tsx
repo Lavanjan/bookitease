@@ -256,3 +256,7 @@ export const footerData2: FooterProps = {
     </div>
   ),
 };
+
+export const appLinks = {
+  adminPortal: 'http://test.serendipityretreats.com/product/user-registration',
+};
